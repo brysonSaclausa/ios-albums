@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Albums Table View Controller-->
+        <!--Albums-->
         <scene sceneID="Tlq-DF-bsm">
             <objects>
                 <tableViewController id="CkI-a0-7JG" customClass="AlbumsTableViewController" customModule="iosAlbumsProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,7 +48,7 @@
                             <outlet property="delegate" destination="CkI-a0-7JG" id="h18-7n-Two"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="k9Q-D2-aEH">
+                    <navigationItem key="navigationItem" title="Albums" id="k9Q-D2-aEH">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MEZ-Ri-v1T">
                             <connections>
                                 <segue destination="yuB-iP-Bd8" kind="show" id="lWj-ik-WOM"/>
@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="-65.625"/>
         </scene>
-        <!--Album Detail Table View Controller-->
+        <!--New Album-->
         <scene sceneID="GAt-H6-3lr">
             <objects>
                 <tableViewController id="yuB-iP-Bd8" customClass="AlbumDetailTableViewController" customModule="iosAlbumsProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -168,7 +168,7 @@
                             <outlet property="delegate" destination="yuB-iP-Bd8" id="3dt-wU-gp6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DgZ-S5-x4j">
+                    <navigationItem key="navigationItem" title="New Album" id="DgZ-S5-x4j">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Pp2-J3-ABN">
                             <connections>
                                 <action selector="saveButtonTapped:" destination="yuB-iP-Bd8" id="A34-p6-OpW"/>
@@ -192,8 +192,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GCn-dm-wgM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Dr-pA-QcS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="7Dr-pA-QcS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
